@@ -1,0 +1,490 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333333;
+    color: #333333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #2196F3, #43A047);
+    color: #ffffff;
+  }
+  
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000; /* Blue */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+  }
+  
+  .logo:hover {
+    color: #000000; /* Slightly darker blue on hover */
+  }
+  
+  
+  header .tagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Default text color */
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease; /* Smooth transition effect */
+  }
+  
+  nav ul li a:hover {
+    color: #33ff00; /* Blue on hover */
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: white; /* Optional: For visibility */
+  }
+  
+
+  /* Hero Section */
+  #hero {
+    height: 100vh;
+    background: url('image/Forest.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+  }
+  
+  #hero h2 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  #hero p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  #hero button {
+    background-color: #43A047;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #hero button:hover {
+    background-color: #0400ff;
+  }
+  
+  #carbon-footprint {
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #66bb6a, #42a5f5); /* Green to Blue Gradient */
+    border-radius: 0px;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: row; /* Aligns the image and text side by side */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .image {
+    flex: 1; /* Takes up 50% of the container */
+    padding-right: 20px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto; /* Ensures image scales well */
+    border-radius: 8px; /* Optional: Adds rounded corners to image */
+  }
+  
+  .text {
+    flex: 1; /* Takes up 50% of the container */
+    text-align: left;
+  }
+  
+  .text h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .text p {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  /* Carbon Button Styling */
+.carbon-btn {
+    
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #27c32c; /* Default Blue */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 30px; /* Rounded edges */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    text-align: center;
+  }
+  
+  .carbon-btn:hover {
+    background-color: #0400ff; /* Green on hover */
+  }
+  
+  /* Section Styling 2 */
+#how-is-produced {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #FF7F50, #FF4500); /* Warm gradient */
+    padding: 50px 100px;
+  }
+  
+  #how-is-produced .image img {
+    max-width: 500px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  #how-is-produced .text {
+    max-width: 600px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #how-is-produced h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #how-is-produced p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* section 3 */
+
+  #how-actions-contribute {
+    background-color: #57a3e6;
+    margin: 40px auto;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #how-actions-contribute .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #how-actions-contribute .text {
+    width: 45%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .button {
+    background-color: #27c32c;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0400ff;
+  }
+  
+  /* Styling for section 4 */
+#carbon-consequences {
+  background: linear-gradient(to right, #e0f7fa, #b2dfdb);
+  padding: 50px 10%;
+  margin-top: 30px;
+  color: #333;
+}
+
+#carbon-consequences h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#carbon-consequences p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#carbon-consequences .section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#carbon-consequences .text-left {
+  width: 48%;
+}
+
+#carbon-consequences .image-right {
+  width: 48%;
+}
+
+#carbon-consequences img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#carbon-consequences .cta-btn {
+  display: inline-block;
+  background-color: #2196f3;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 12px 30px;
+  text-align: center;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+#carbon-consequences .cta-btn:hover {
+  background-color: #43a047; /* Green hover */
+}
+
+/* Section 5 styling */
+
+#community-impact {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #FFD1BA, #FFE9D6);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.section-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #2d6a4f;
+  margin-bottom: 15px;
+}
+
+.section-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn-green {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 12px 30px;
+  text-align: center;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.btn-green:hover {
+  background-color: #43a047;
+}
+
+/* Footer */
+
+  #main-footer {
+    background: linear-gradient(to top, #008cff, #002fff); 
+    color: #fff;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left, .footer-right {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-left h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    gap: 10px;
+    margin-left: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #FFD700; /* Golden yellow on hover */
+  }
+
+  .footer-right {
+    text-align: right; /* Aligns text and elements to the right */
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .social-icons {
+    display: inline-flex; /* Ensures the icons are aligned in a row */
+    gap: 10px; /* Space between the icons */
+    justify-content: flex-end; /* Pushes icons to the rightmost side */
+    margin-right: 0; /* Removes any unintended margin on the right */
+  }
+  
+  .footer-right p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+  .social-icons {
+    display: inline-flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+    color: #FFD700; /* Matches hover color */
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-left, .footer-right {
+      flex: 1;
+      margin: 0 0 20px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
